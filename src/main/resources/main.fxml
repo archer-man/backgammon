@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backgammon.controller.Controller">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="900.0">
+         <children>
+            <Pane id="rightPane" fx:id="leftPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #fef4b2;" />
+            <Pane id="leftPane" fx:id="rightPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="200.0" style="-fx-background-color: #08AAF0;">
+               <children>
+                  <ImageView fx:id="leftDiceIV" fitHeight="40.0" fitWidth="40.0" layoutX="50.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="rightDiceIV" fitHeight="40.0" fitWidth="40.0" layoutX="110.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="rollDiceButton" layoutX="70.0" layoutY="160.0" mnemonicParsing="false" text="Бросить" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Pane id="bottomPane" fx:id="bottomPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="900.0" style="-fx-background-color: #24BF09;">
+         <children>
+            <Circle fx:id="currentSideCircle" fill="DODGERBLUE" layoutX="490.0" layoutY="76.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="CENTER_RIGHT" layoutX="349.0" layoutY="52.0" text="Ходят:">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="701.0" layoutY="3.0" text="Счёт">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="667.0" layoutY="50.0" text="Белые">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="668.0" layoutY="93.0" text="Чёрные">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="whiteScore" layoutX="773.0" layoutY="46.0" text="0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="blackScore" layoutX="773.0" layoutY="89.0" text="0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</VBox>
