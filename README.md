@@ -1,6 +1,6 @@
 # Backgammon
 
-Backgammon is game written in Java using JavaFX technology.
+Backgammon game written in Java using JavaFX technology.
 
 
 ## Usage
