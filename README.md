@@ -12,4 +12,4 @@ java -jar backgammon.jar
 ```
 
 ## Requirements
-* JDK 10 or higher
+* JRE 10 or higher
